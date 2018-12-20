@@ -1,0 +1,24 @@
+<style>
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+</style>
+<table align="center">
+
+    <tr align="center" bgcolor='#FFDAB9'>
+        <td> <b>WAGONNUMBER</b> </td>
+        <td> <b>DEFECTNAME</b> </td>
+        <td> <b>CNTFOUND</b> </td>
+        <td> <b>CNTFIXED</b> </td>
+    </tr>
+{% for rows in selected_table %}
+    <tr>
+        {% for value in rows %}
+        <td> {{value}} </td>
+    {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+
